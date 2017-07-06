@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body ng-app="myApp">
+	<div ng-controller="myCtrl">
+		
+	</div>
+
+	<div ng-controller="myCtrl2"></div>
+	<script src="js/angular.js"></script>
+	<script>
+		var app=angular.module("myApp",[]);
+		app.controller("myCtrl",function($scope,$rootScope){
+			$scope.name='Mike'
+			$rootScope.num='100'
+			console.log($scope.name)
+			console.log($rootScope.num)
+		})
+		app.controller("myCtrl2",function($scope,$rootScope){
+			//局部不可打印
+			console.log($scope.name)
+			//全局可打印
+			console.log($rootScope.num)
+		})
+	</script>
+</body>
+</html>

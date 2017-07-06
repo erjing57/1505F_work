@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	一、循环数组(已注释)
+	<!-- <div ng-app="" ng-init="arr=['A','B','C']">
+	  <h1>使用ng-repeat循环数组</h1>
+	  <p ng-repeat="i in arr">
+	  	{{i}}
+	  </p>
+	</div> -->
+
+	<div ng-app="" ng-init="obj=[{name:'A',num:'1'},
+{name:'B',num:'2'},
+{name:'C',num:'3'}]">
+
+		<h1>使用ng-repeat循环对象:</h1>
+		<p ng-repeat="x in obj">
+			{{x.name+'======'+x.num}}
+		</p>
+	</div>
+
+
+	<script src="js/angular.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		div{
+			width:200px;
+			height:200px;
+			border:1px solid;
+		}
+		.blue{
+			background: blue;
+		}
+		.pink{
+			background: pink;
+		}
+	</style>
+</head>
+<body ng-app="">
+	<select ng-model="val">
+		<option value="blue">蓝色</option>
+		<option value="pink">粉色</option>
+	</select>
+
+	<div ng-class="val">
+	  
+	</div>
+	<script src="js/angular.js"></script>
+	<script>
+
+	</script>
+</body>
+</html>
